@@ -8,7 +8,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 from sklearn.impute import SimpleImputer
 
-@st.cache
+@st.cache_data
 def load_data():
     data = pd.read_csv('house_data.csv')
     return data
